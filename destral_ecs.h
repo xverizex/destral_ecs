@@ -631,6 +631,7 @@ de_storage* de_assure(de_ecs* r, de_cp_type cp_type) {
     for (size_t i = 0; i < r->storages_size; i++) {
         if (r->storages[i]->cp_id == cp_type.cp_id) {
             storage_found = r->storages[i];
+            break;
         }
     }
 
